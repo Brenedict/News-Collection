@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&family=Kdam+Thmor+Pro&family=Odibee+Sans&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #E01F1F;
+    --light-gray: #878181;
+    --dark-gray-1: #202020;
+    --dark-gray-2: #151515;
+    --dark-gray-3: #101010;
+    --Kdam-Thmor: "Kdam Thmor Pro", serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: var(--dark-gray-3);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}

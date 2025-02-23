@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color:var(--dark-gray-1);
+    justify-content: space-between;
+    padding: 40px 7.5%;
+}
+
+.navbar-clickables {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navlink {
+    text-decoration: none;
+    font-family: var(--Kdam-Thmor);
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.search-bar {
+    background-color: var(--dark-gray-1);
+    border: solid 1px var(--light-gray);
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 180px;
+}
+
+.search-bar:focus {
+    background-color: var(--white);
+}
