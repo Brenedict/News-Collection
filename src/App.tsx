@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import "./index.css";
 import "./styles/Global.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -15,6 +14,7 @@ function App() {
   return (
     <main>
       <Navbar></Navbar>
+      <br />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/general" element={<General />} />

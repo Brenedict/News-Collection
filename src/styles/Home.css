@@ -1,0 +1,58 @@
+.loading-draft {
+    color: var(--white);
+}
+
+main {
+    background-color: var(--dark-gray-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    gap: 10px;
+} 
+
+.main-articles-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* height: 100%; */
+}
+
+.main-articles-selection {
+    color: var(--white);
+    background-color: var(--dark-gray-1);
+    font-family: var(--Kdam-Thmor);
+    cursor: pointer;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 240px;
+    min-width: 400px;
+    overflow: hidden;
+}
+
+.main-articles-selection:hover {
+    background-color: var(--dark-gray-2);
+    opacity: 80%;
+}
+
+.selected {
+    background-color: var(--red);
+}
+
+.main-article-title {
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.main-article-date {
+    font-size: 0.8rem;
+}
