@@ -13,7 +13,7 @@ main {
 .hero-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center;  -> Made the selection divs not able to maximize their heights*/
     width: 85%;
     gap: 10px;
 } 
@@ -22,7 +22,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    /* height: 100%; */
 }
 
 .main-articles-selection {
@@ -30,13 +29,13 @@ main {
     background-color: var(--dark-gray-1);
     font-family: var(--Kdam-Thmor);
     cursor: pointer;
-    padding: 50px 20px;
+    padding: 35px 20px;
     display: flex;
     flex-direction: column;
-    gap: 35px;
-    height: 240px;
-    min-width: 400px;
-    overflow: hidden;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
+    /* min-width: 400px; -> Made the main article choices fixed and thus causing overlap*/
 }
 
 .main-articles-selection:hover {
@@ -49,7 +48,8 @@ main {
 }
 
 .main-article-title {
-    font-size: 1.1rem;
+    /* Tempporary font size change for dynamicness */
+    font-size: clamp(0.7rem, 0.8vw, 2rem); 
     font-weight: 100;
 }
 
