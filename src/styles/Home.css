@@ -2,12 +2,14 @@
     color: var(--white);
 }
 
-main {
+.home-container {
     background-color: var(--dark-gray-3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    gap: 10px;
 }
 
 .hero-section {
@@ -55,4 +57,8 @@ main {
 
 .main-article-date {
     font-size: 0.8rem;
+}
+
+a {
+    color: var(--white);
 }

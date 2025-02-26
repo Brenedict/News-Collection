@@ -1,0 +1,16 @@
+.article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 200px;
+    gap: 30px;
+}
+
+.article-container img {
+}
+
+.article-container h1, .article-container h2 {
+    font-family: var(--Kdam-Thmor);
+    color: var(--white);
+}

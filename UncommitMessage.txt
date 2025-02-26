@@ -1,0 +1,2 @@
+Current Issue:
+- It seems like the styling of ArticleDisplay1 & 2 are overlapping, as gpt mentioned, the classnames of the component tags may be intervening since ArticleDisplay1 has been created first and shares the same class names with the then created ArticleDisplay2

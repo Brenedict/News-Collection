@@ -1,20 +1,16 @@
-import { ReactNode, useContext } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import "../styles/ArticleDisplay1.css";
+import "../styles/ArticleDisplay2.css";
 import { ArticleInterface } from "../services/api";
 import { NewsContext } from "../context/NewsProvider";
 
-interface Prop {
-  page?: string;
-  article: ArticleInterface;
-}
-
-function ArticleDisplay1({ page, article }: Prop) {
+function ArticleDisplay2({ article }: { article: ArticleInterface }) {
   const newsContext = useContext(NewsContext);
+
   return (
     <div className={`image-container`}>
-      <img src={article.urlToImage} alt="" className={`${page}`} />
+      <img src={article.urlToImage} alt="" />
       <p>
         <Link
           onClick={() => {
@@ -29,4 +25,4 @@ function ArticleDisplay1({ page, article }: Prop) {
   );
 }
 
-export default ArticleDisplay1;
+export default ArticleDisplay2;
